@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:uuid/uuid.dart';
-
-final dateFormatter = DateFormat.yMd();
+import 'package:expense_tracker/tools.dart';
 
 const uuid = Uuid();
 
