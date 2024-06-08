@@ -30,9 +30,19 @@ class _ExpenseState extends State<Expenses> {
         category: Category.leisure),
   ];
 
+  void addExpense(Expense expense) {
+    setState(() {
+      _registeredExpenses.add(expense);
+    });
+  }
+
   void _openAddExpenseOverlay() {
     showModalBottomSheet(
-        context: context, builder: (ctx) => const NewExpense());
+      context: context,
+      builder: (ctx) => NewExpense(
+        onAddExpense: addExpense,
+      ),
+    );
   }
 
   @override
