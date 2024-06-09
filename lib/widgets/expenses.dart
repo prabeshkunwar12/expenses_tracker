@@ -12,7 +12,23 @@ class Expenses extends StatefulWidget {
 }
 
 class _ExpenseState extends State<Expenses> {
-  final List<Expense> _registeredExpenses = [];
+  final List<Expense> _registeredExpenses = [
+    Expense(
+        title: 'test1',
+        amount: 100,
+        date: DateTime.now(),
+        category: Category.food),
+    Expense(
+        title: 'test2',
+        amount: 100,
+        date: DateTime.now(),
+        category: Category.food),
+    Expense(
+        title: 'test3',
+        amount: 100,
+        date: DateTime.now(),
+        category: Category.food),
+  ];
 
   void _addExpense(Expense expense) {
     setState(() {
