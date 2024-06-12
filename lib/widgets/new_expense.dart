@@ -143,7 +143,7 @@ class _NewExpenseState extends State<NewExpense> {
                 onPressed: _submitExpenseData,
                 child: const Text('Submit'),
               ),
-              ElevatedButton(
+              TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
