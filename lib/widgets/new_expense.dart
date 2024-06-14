@@ -27,7 +27,7 @@ class _NewExpenseState extends State<NewExpense> {
         ? showCupertinoDialog(
             context: context,
             builder: (ctx) => AlertDialog(
-              title: const Text('Invalid Input'),
+              title: const Text('Invalid Input!'),
               content: const Text(
                   'Please make sure a calid title, amount, date and category was entered.'),
               actions: [
